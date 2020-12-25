@@ -14,6 +14,10 @@ public class Main {
         System.out.println(connection.login);
         System.out.println(connection.password);
         connectionPool.releaseConnection(connection);
+        Connection connection2 = connectionPool.getConnection();
+        System.out.println(connection2.url);
+        System.out.println(connection2.login);
+        System.out.println(connection2.password);
     }
 }
 
